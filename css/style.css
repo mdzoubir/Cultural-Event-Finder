@@ -5,6 +5,7 @@
 
 :root {
     /* Color Palette */
+    --font-family-league: 'League Spartan';
     --primary-color: #CCAD60; /* Main golden-yellow color */
     --secondary-color: #005b4d; /* Hover shade for primary color */
     --white-color: #f4f4f4; /* Light gray background */
@@ -18,11 +19,12 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* Reset and General Styles */
 body {
-    font-family: 'League Spartan', sans-serif;
+    font-family: var(--font-family-league), serif;
     color: var(--text-color);
 }
 
@@ -609,3 +611,267 @@ a.active {
     }
 }
 
+.contact-section {
+    padding: 80px 20px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.contact-section .contact-intro {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center; /* Align image and text horizontally */
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 25px 0 #0000000f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card img {
+    width: 50px; /* Adjust image size */
+    height: 50px;
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.contact-card div {
+    flex: 1; /* Allow the text section to take the remaining space */
+}
+
+.contact-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-card p, .contact-card a {
+    font-size: 1em;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+    color: var(--link-hover);
+}
+
+.contact-form {
+    padding: 0 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure form fills the height */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%; /* Ensure it takes up the full width of the parent container */
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: var(--font-family-league), sans-serif;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+    outline: none;
+    border: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+}
+
+.contact-form .btn-submit {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--button-text-color);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 0;
+    }
+}
+
+
+.footer {
+    background-color: var(--white-color); /* Light background color */
+    color: var(--text-color);
+    padding: 40px 20px;
+    padding-bottom: 0;
+    border-top: 2px solid var(--primary-color);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.logo-col {
+    text-align: left;
+}
+
+.logo {
+    width: 150px; /* Adjust logo size as needed */
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+.footer-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.links-col, .social-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links, .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links li a, .social-links li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover, .social-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* Full width for each section */
+    }
+
+    .logo {
+        width: 120px; /* Slightly smaller logo on smaller screens */
+    }
+
+    .social-icon {
+        font-size: 1.3em; /* Adjusted for better fit */
+        padding: 5px;
+    }
+}
+
+
+.footer__copyright {
+    margin-top: 40px;
+    border-top: 1px solid var(--primary-color);
+    text-align: center;
+}
+
+
+.footer-col.social-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.social-links i {
+    font-size: 1.2em;
+}
+
+
+/* Facebook icon color */
+.facebook-icon i {
+    color: #1877F2;
+}
+
+/* Twitter icon color */
+.twitter-icon i {
+    color: #1DA1F2;
+}
+
+/* Instagram icon with gradient */
+.instagram-icon i {
+    background: linear-gradient(135deg, #feda75, #fcb043, #d6249f, #e95950); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* LinkedIn icon color */
+.linkedin-icon i {
+    color: #0077b5; /* Updated to the proper LinkedIn color */
+}
