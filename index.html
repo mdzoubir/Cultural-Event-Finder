@@ -21,7 +21,7 @@
                 <span>📞 +212 123-456-789</span>
             </div>
             <div class="inscription">
-                <a href="newsletter.html" class="btn">Subscribe</a>
+                <a href="" class="btn btn-primary">Subscribe</a>
             </div>
         </div>
     </div>
@@ -41,13 +41,20 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Burger Menu -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <div class="header-buttons">
-                <a href="login.html" class="btn login-btn">Login</a>
-                <a href="register.html" class="btn register-btn">Register</a>
+                <a href="" class="btn btn-primary">Login</a>
+                <a href="" class="btn btn-secondary">Register</a>
             </div>
         </div>
     </div>
 </header>
+
 
 <section class="hero">
     <div class="hero-content">
@@ -58,7 +65,7 @@
             <br>
             From timeless heritage to modern creativity, let every event inspire your journey.
         </p>
-        <a href="events.html" class="btn">Explore Events</a>
+        <a href="events.html" class="btn btn-primary">Explore Events</a>
     </div>
 </section>
 
@@ -72,7 +79,7 @@
                 <img src="assets/images/9e67ee1d8b83d89a78993c4d924285e0.jpg"
                      alt="Moroccan Art" class="image-secondary">
             </div>
-            <div class="text">
+            <div class="text-part">
                 <h5>About us</h5>
                 <h2>Experience the Heart of Culture</h2>
                 <p>
@@ -81,17 +88,16 @@
                     discover events that celebrate the soul of Moroccan culture.
                     Let every event be your next adventure.
                 </p>
-                <a href="about.html" class="btn">Discover More</a>
+                <a href="about.html" class="btn btn-primary">Discover More</a>
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="featured-events">
+<section id="sample-tours" class="featured-events">
     <div class="container">
         <h2>Unforgettable tours of Morocco tailored to you.</h2>
-        <p></p>
         <div class="event-list">
             <div class="event-item">
                 <img src="assets/images/IMG_7763.JPG" alt="Casablanca Jazz Festival">
@@ -99,7 +105,7 @@
                     <h3>Casablanca Jazz Festival</h3>
                     <h5>6 DAYS</h5>
                     <p>Experience the rhythm and energy of jazz music in the heart of Casablanca.</p>
-                    <a href="event-details.html" class="btn">View Details</a>
+                    <a href="event-details.html" class="btn btn-primary btn-primary">View Details</a>
                 </div>
             </div>
             <div class="event-item">
@@ -109,7 +115,7 @@
                     <h3>Marrakech Film Festival</h3>
                     <h5>4 DAYS</h5>
                     <p>A celebration of cinema featuring screenings and discussions with renowned filmmakers.</p>
-                    <a href="event-details.html" class="btn">View Details</a>
+                    <a href="event-details.html" class="btn btn-primary">View Details</a>
                 </div>
             </div>
             <div class="event-item">
@@ -118,7 +124,7 @@
                     <h3>Fez World Sacred Music Festival</h3>
                     <h5>10 DAYS</h5>
                     <p>An enchanting journey into the spiritual world of music and art in Fez.</p>
-                    <a href="event-details.html" class="btn">View Details</a>
+                    <a href="event-details.html" class="btn btn-primary">View Details</a>
                 </div>
             </div>
             <div class="event-item">
@@ -127,7 +133,7 @@
                     <h3>Essaouira Gnaoua Festival</h3>
                     <h5>5 DAYS</h5>
                     <p>Dive into the vibrant rhythms and soulful music of Essaouira's iconic festival.</p>
-                    <a href="event-details.html" class="btn">View Details</a>
+                    <a href="event-details.html" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
@@ -177,15 +183,15 @@
         </div>
 
         <div class="actions">
-            <a href="#team" class="btn">Meet the Team</a>
-            <a href="#sample-tours" class="btn">View Sample Tours</a>
-            <a href="#client-reviews" class="btn">Read Client Reviews</a>
+            <a href="#team" class="btn btn-primary">Meet the Team</a>
+            <a href="#sample-tours" class="btn btn-primary">View Sample Tours</a>
+            <a href="#testimonials" class="btn btn-primary">Read Client Reviews</a>
         </div>
     </div>
 </section>
 
 
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
     <div class="container">
         <h2>What Our Guests Are Saying</h2>
         <div class="testimonial-list">
@@ -292,7 +298,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">Send Message</button>
+                    <button type="submit" class="btn btn-secondary">Send Message</button>
                 </form>
             </div>
         </div>
@@ -303,11 +309,12 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <div class="footer-col logo-col">
+            <div class="logo-col">
                 <img src="assets/images/img.png" alt="Logo" class="logo">
-                <p class="footer-description">Your company description goes here. Make it brief and engaging.</p>
+                <p class="footer-description">Uncover the beauty of Morocco's vibrant traditions, festivals, and art.
+                </p>
             </div>
-            <div class="footer-col links-col">
+            <div class="links-col">
                 <h4 class="footer-title">Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
@@ -317,27 +324,27 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-col social-col">
+            <div class="social-col">
                 <h4 class="footer-title">Follow Us</h4>
                 <ul class="social-links">
                     <li>
                         <a href="https://facebook.com" target="_blank" class="social-icon facebook-icon">
-                            <i class="fi fi-brands-facebook"></i> Facebook
+                            <i class="fi fi-brands-facebook"></i> <span>Facebook</span>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com" target="_blank" class="social-icon twitter-icon">
-                            <i class="fi fi-brands-twitter-alt-circle"></i> Twitter
+                            <i class="fi fi-brands-twitter-alt-circle"></i> <span>Twitter</span>
                         </a>
                     </li>
                     <li>
                         <a href="https://instagram.com" target="_blank" class="social-icon instagram-icon">
-                            <i class="fi fi-brands-instagram"></i> Instagram
+                            <i class="fi fi-brands-instagram"></i> <span>Instagram</span>
                         </a>
                     </li>
                     <li>
                         <a href="https://linkedin.com" target="_blank" class="social-icon linkedin-icon">
-                            <i class="fi fi-brands-linkedin"></i> LinkedIn
+                            <i class="fi fi-brands-linkedin"></i> <span>LinkedIn</span>
                         </a>
                     </li>
                 </ul>
@@ -346,13 +353,22 @@
     </div>
     <div class="footer__copyright">
         <div class="container">
-            <div class="">
-                <p class="">
-                    © All Copyright 2024
-                    by Med zoubir</p>
-            </div>
+            <p>
+                © All Copyright 2024
+                by Med zoubir</p>
         </div>
     </div>
 </footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        const burgerMenu = document.querySelector('.burger-menu');
+
+        navLinks.classList.toggle('active');
+        burgerMenu.classList.toggle('active');
+    }
+
+</script>
 </body>
 </html>
