@@ -426,7 +426,45 @@
     cursor: pointer;
 }
 
-/*End contact.css section*/
+/* Subscription Section */
+.subscription-section {
+    background: var(--primary-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.subscription-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.subscription-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.subscription-form button {
+    border: none;
+    cursor: pointer;
+}
 
 
 /*Start responsive design*/
